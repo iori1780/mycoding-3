@@ -1,0 +1,44 @@
+/*-----------------
+変数
+-----------------*/
+
+// カラー設定
+$color-black: #333;
+
+$color-dark-black: #000;
+
+$color-fv-bg: #222;
+
+$color-gray: #f2f2f2;
+
+$color-light-gray: #cecece;
+
+$color-line: #ddd;
+
+$color-dark-gray: #525252;
+
+$color-bg-gray: #f0f0f0;
+
+$color-white: #fff;
+
+
+/*-----------------
+レスポンシブ
+-----------------*/
+
+//ブレイクポイント
+$tab: 768px;
+$sm: 480px;
+
+//タブレット
+@mixin tab {
+  @media screen and(max-width: $tab) {
+    @content;
+  }
+}
+//スマホ
+@mixin sm {
+  @media screen and(max-width: $sm) {
+    @content;
+  }
+}
